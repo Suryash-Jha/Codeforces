@@ -24,8 +24,9 @@ int main()
 	}
 	else
 	{
+		int index= lower_bound(arr, arr+46, n)-arr;
 		
-		cout<<arr[lower_bound(arr, arr+46, n)-arr-1]<<" "<<arr[lower_bound(arr, arr+46, n)-arr-3]<<" "<<arr[lower_bound(arr, arr+46, n)-arr-4]<<endl;
+		cout<<arr[index-1]<<" "<<arr[index-3]<<" "<<arr[index-4]<<endl;
 	}
 	
  
