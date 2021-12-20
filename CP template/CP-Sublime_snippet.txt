@@ -1,3 +1,4 @@
+//Go to tools>developer>new snippets
 //Copy this file and save it as "name.sublime-snippet"
 //Set the trigger by changing the text in "tabtrigger"....by default if you have any file named .cpp then by typing "start" and //enter you can get this. 
 
