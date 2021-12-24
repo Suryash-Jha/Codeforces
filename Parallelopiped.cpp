@@ -1,3 +1,21 @@
+//Question Link: https://codeforces.com/contest/224/problem/A
+/*
+
+Algorithm:
+
+Its a quite basic one but due to some wrong thoughts i haven't understood properly how to proceed and thus it took a lot of my time as i thought to brute force it with 3 nested loops which i know is quite wrong :(
+
+Assume sides of paralleopied to be l, b, h.
+Now, 
+Area1= l*b;
+Area2= b*h;
+Area3= h*l;
+
+and thus, l= ((Area1*Area3)/Area2)^(1/2)
+.... and so on
+
+
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
