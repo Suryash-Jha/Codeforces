@@ -29,7 +29,7 @@ void solution() {
    s.push('h');
 for(int i=0; i<str.length(); i++)
 {if(s.empty()){
-	b=1;
+
 	break;
 }
 	if(s.top()== str[i])
