@@ -28,6 +28,10 @@ void solution() {
 
    fo(i, n){
     fo(j, m){
+
+
+      //All of these will give the distance from the 4 corners as corners are the farthest possible!
+      
       int a= i+j;
       int b= (n- i -1) +j;
       int c= i + (m-j-1);
