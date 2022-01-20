@@ -1,7 +1,7 @@
 //Question Link: https://codeforces.com/contest/379/problem/A
 
 
-//O(logn)
+//O(1)
 #include<bits/stdc++.h>
 #include<ext/pb_ds/assoc_container.hpp>
 #include<ext/pb_ds/tree_policy.hpp>
@@ -26,17 +26,8 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 void solution() {
  int n, k, ans=0, carry;
    cin>>n>>k;
-   ans+= n;
-   while(n>=k)
-   {
-    int div= n/k;
-    ans+= div;
-    int rem = n%k;
-    n= div+ rem;
-   }
-   // cout<<ans<<endl;
- 
-   cout<<ans<<endl;
+     //Read it in codeforces blog.
+   cout<<((n*k)-1)/(k-1)<<endl;
 
 }
 
