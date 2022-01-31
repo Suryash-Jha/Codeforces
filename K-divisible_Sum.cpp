@@ -1,5 +1,3 @@
-//Question Link: https://codeforces.com/problemset/problem/1476/A
-
 #include<bits/stdc++.h>
 #include<ext/pb_ds/assoc_container.hpp>
 #include<ext/pb_ds/tree_policy.hpp>
@@ -22,15 +20,17 @@ typedef vector<int> vi;
 typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds; //*find_by_order(val);   order_of_key(val);
 
 void solution() {
-   int n, k;
-   cin>>n>>k;
-   if(n==k || n%k==0){
-    cout<<1<<endl;
+   int a, b, c;
+   cin>>a>>b>>c;
+   int sum= a+b+c;
+   if(sum%2==0){
+    cout<<"YES"<<endl;
    }
    else{
-    int val=2;
-    cout<<max((n+k-1)/n, val)<<endl;
+    cout<<"NO"<<endl;
    }
+
+
 }
 
 int32_t main() {
