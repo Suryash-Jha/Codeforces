@@ -14,7 +14,7 @@ using namespace __gnu_pbds;
 #define pb push_back
 #define mod 1e9 +7
 #define w(x) int x; cin>>x; while(x--)
-#define endl "\n"
+#define endl "\n"j
 #define vp(i, a, n) vi a; fo(i, n){int x; cin>>x; a.pb(x);}
 #define ap(i, a, n) fo(i, n){cin>>a[i];}
 
