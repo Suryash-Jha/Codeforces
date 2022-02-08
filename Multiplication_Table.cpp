@@ -21,35 +21,33 @@ using namespace __gnu_pbds;
 typedef vector<int> vi;
 typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds; //*find_by_order(val);   order_of_key(val);
 
-
-// A Better (than Naive) Solution to find all divisiors
-#include <iostream>
-#include <math.h>
-using namespace std;
- 
-
 void solution() {
-   int n, k, ans=0;
-   cin>>n>>k;
-   for(int i=1; i<=sqrt(k); i++){
-   	int v= k/i;
-   	if((v*i)== k && i<=n && v<=n){
-   		ans++;
-
-
-if(i!= v){
-   		 	ans++;
-   		 }
-		}
-		 
-	}
-   cout<<ans;
-
+   
+    int n, k, c=0;
+    cin>>n>>k;
+    set<pair<int, int>> s;
+    if(k==1){
+      cout<<1<<endl;
+      return;
+    }
+ 
+    for(int i=1; i<=sqrt(k); i++){
+      if(k%i==0){
+        s.insert({i, k/i});
+      }
+    }
+    for(auto it: s){
+      if(it.first<=n && it.second<=n && it.first!= it.second)
+        c+=2;
+      else if(it.first<=n && it.second<=n && it.first== it.second)
+        c+=1;
+    }
+    cout<<c<<endl;
 }
 
 int32_t main() {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-    // wn/i(t)
+    // w(t)
     {
         solution();
     }
